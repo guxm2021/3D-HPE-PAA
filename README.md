@@ -1,4 +1,7 @@
 # Boosting Monocular 3D Human Pose Estimation with Part Aware Attention
+This is the author's official PyTorch implementation for 3D-HPE-PAA. This repo contains code for experiments in the TIP journal paper:
+
+[Boosting Monocular 3D Human Pose Estimation with Part Aware Attention](https://ieeexplore.ieee.org/abstract/document/9798770)
 
 ## Environment settings
 The codebase is tested under the following environment settings:
@@ -55,6 +58,20 @@ CUDA_VISIBLE_DEVICES=0 python eval.py -c ./exp/exp_gt_f81.bin # using 81 frames 
 ```shell
 CUDA_VISIBLE_DEVICES=0 python eval.py -c ./exp/exp_gt_f243.bin # using 243 frames as input
 ```
+
+## Citation
+If you use this codebase in your own work, please cite our paper:
+```
+@article{xue2022boosting,
+  title={Boosting Monocular 3D Human Pose Estimation With Part Aware Attention},
+  author={Xue, Youze and Chen, Jiansheng and Gu, Xiangming and Ma, Huimin and Ma, Hongbing},
+  journal={IEEE Transactions on Image Processing},
+  volume={31},
+  pages={4278--4291},
+  year={2022},
+  publisher={IEEE}
+}
+```
+
 ## Acknowledgement
  Part of the code is borrowed from [Poseformer](https://github.com/zczcwh/PoseFormer) and [VideoPose3D](https://github.com/facebookresearch/VideoPose3D). We thank the authors for releasing their codes.
-
